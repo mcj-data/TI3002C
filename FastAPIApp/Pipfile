@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+uvicorn = {extras = ["standard"], version = "*"}
+fastapi = "*"
+pydantic = "*"
+scikit-learn = "*"
+scipy = "*"
+numpy = "*"
+pandas = "*"
+python-multipart = "*"
+opencv-python = "*"
+tensorflow = "*"
+keras = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
