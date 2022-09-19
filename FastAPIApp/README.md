@@ -1,0 +1,1 @@
+python -m pipenv run uvicorn App.main:app

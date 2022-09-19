@@ -1,0 +1,55 @@
+.inputImage{
+    grid-area: inputImageM2;
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+.inputImage > img{
+    
+    border-radius: 8px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 10px;
+}
+.M2{
+    
+    display: grid;
+    max-width: 100%;
+    grid-template:
+    ". DragDropM2 responseM2" auto
+    ". inputImageM2 responseM2" auto /
+    15% 70% 15%;
+}
+
+.ResponseCard{
+    grid-area: responseM2;
+    
+    z-index: 1;
+    
+    box-shadow: 0 15px 45px -10px rgba(0,0,0,0.15);
+    opacity: 0.9;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    width: fit-content;
+    
+}
+.ResponseCardTitle{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+.ResponseCardBody{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}

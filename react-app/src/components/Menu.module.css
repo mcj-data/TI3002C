@@ -1,0 +1,63 @@
+.Sidebar{
+    grid-area: Sidebar;
+    box-shadow: 0 15px 45px -10px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 10px;
+    }
+.Footer{
+    grid-area: Footer;
+    box-shadow: 0 15px 45px -10px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 10px;
+}    
+.Menu {
+    grid-area: menu;
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    
+  }
+.Tab {
+
+padding: 15px;
+margin: 1px;
+text-align: center;
+width: fit-content;
+height: 100%;
+max-width: 50px;
+background: rgba(128, 128, 128, 0.075);
+cursor: pointer;
+border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+
+position: relative;
+outline: none;
+}
+.Tab:hover{
+
+border-bottom: 1px solid transparent;
+
+}
+.Tab:not(:last-child){
+
+
+border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.activeTab  {
+background: white;
+border-bottom: 1px solid transparent;
+}
+
+.activeTab::before {
+content: "";
+display: block;
+position: absolute;
+top: -5px;
+left: 50%;
+transform: translateX(-50%);
+width: calc(100% + 2px);
+height: 5px;
+background: rgb(88, 147, 241);
+}

@@ -1,0 +1,72 @@
+.Page{
+    
+}
+.Main{
+    max-width: 80%;
+    display: grid;
+    grid-gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+
+    grid-template: 
+    ". menu" auto
+    "Sidebar App" auto 
+    "Footer Footer" auto/
+    150px auto ;
+}
+
+.App{
+grid-area: App;
+
+box-shadow: 0 15px 45px -10px rgba(0,0,0,0.15);
+padding: 15px;
+border-radius: 10px;
+min-height: 500px;
+
+
+}
+
+.Title{
+    width: fit-content;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.Form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Form>label{
+    padding: 10px;
+}
+
+.formSubmit{
+    width: 10%;
+    padding: 2px;
+    margin-right: auto;
+}
+.DragDropContainer{
+    grid-area: DragDropM2;
+    max-width:50% ;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+}
+.DragDropContainer > form >input{
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    background-color: navy;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    
+    cursor: pointer;
+}

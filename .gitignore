@@ -1,0 +1,4 @@
+react-app/node_modules/
+Pipfile
+Pipfile.lock
+.env
